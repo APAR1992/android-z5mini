@@ -4,7 +4,7 @@ import sys
 old = sys.argv[1]
 new = sys.argv[2]
 data = open(old, 'rb').read()
-start = data.find('PK')
+start = data.find('PK\003\004')
 
 end = 0
 while True:
